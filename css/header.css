@@ -1,0 +1,58 @@
+header {
+  background-color: white;
+  padding-top: 15px;
+}
+header .container {
+  max-width: 1064px;
+  height: 56px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav {
+  transform: translateX(0);
+  width: 395px;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+  margin-right: 28px;
+}
+header nav ul a {
+  font: 700 16px/26.4px "Roboto", sans-serif;
+  color: #1C1B1B;
+  text-decoration: none;
+}
+header nav .nav-links {
+  opacity: 1;
+  flex-direction: row;
+  align-items: center;
+  transform: translateX(0px);
+  padding-left: 0;
+  white-space: nowrap;
+}
+header nav .nav-links .link {
+  margin-right: 28px;
+}
+
+.container .logo {
+  position: absolute;
+  left: calc(50% - 40px);
+}
+
+.container ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.container ul li:first-of-type {
+  margin-right: 15px;
+}
+.container ul li:last-of-type {
+  margin-left: 7px;
+}
+
+/*# sourceMappingURL=header.css.map */

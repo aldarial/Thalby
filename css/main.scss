@@ -1,0 +1,423 @@
+.fall_in_love {
+  background-color: #F0EFEB;
+  display: flex;
+  margin: auto;
+  align-items: center;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    article {
+      align-items: flex-start;
+      flex-direction: column;
+
+      h1 {
+        font: 700 60px/normal $main_font;
+        color: $black_color;
+        margin-bottom: 42px;
+        margin-top: 90px;
+        width: 540px;
+        @include max-screen(768px) {
+          font: 700 40px/normal $main_font;
+          margin-bottom: 22px;
+          padding-top: 160px;
+          padding-left: 15px;
+          max-width: 250px;
+        }
+      }
+
+      p {
+        font: 400 24px/normal $main_font;
+        color: $black_color;
+        margin-bottom: 26px;
+        @include max-screen(768px) {
+          font: 400 18px/normal $main_font;
+          margin-bottom: 13px;
+          padding-left: 15px;
+        }
+      }
+
+      a {
+        font: 400 17px/normal $main_font;
+        color: #FFF;
+        display: inline-flex;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 100px;
+        border: 1px solid $black_color;
+        background: $black_color;
+        padding: 7px 23px 9px 23px;
+        margin-bottom: 90px;
+        @include max-screen(768px) {
+          font: 400 16px/normal $main_font;
+          margin-bottom: 45px;
+          margin-left: 15px;
+        }
+      }
+    }
+
+    .fall_img {
+      max-height: 100%;
+      max-width: 599px;
+      position: relative;
+      right: -100px;
+      @include max-screen(768px) {
+        right: 0;
+      }
+    }
+  }
+}
+.our_guides {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    text-align: center;
+
+    h2 {
+      color: $black_color;
+      font: 700 36px/normal $main_font;
+      margin-bottom: 27px;
+      padding-top: 60px;
+    }
+
+    p {
+      color: $black_color;
+      font: 400 20px/normal $main_font;
+      margin-bottom: 47px;
+    }
+
+    h4 {
+      color: $black_color;
+      font: 400 20px/normal $main_font;
+      margin-bottom: 87px;
+    }
+
+    h3 {
+      color: $black_color;
+      font: 700 36px/normal $main_font;
+      margin-bottom: 52px;
+    }
+
+    .sellers {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      margin-bottom: 248px;
+      @include max-screen(768px) {
+        display: block;
+      }
+
+      .content {
+        @include max-screen(768px) {
+          margin-bottom: 20px;
+        }
+      }
+
+      img {
+        margin-bottom: 20px;
+      }
+
+      article {
+        display: flex;
+        max-width: 315px;
+      }
+
+      h4 {
+        font: 700 17px/normal $main_font;
+        color: $black_color;
+        margin-bottom: 10px;
+        padding: 0 100px;
+      }
+
+      p {
+        font: 400 17px/normal $main_font;
+        color: $black_color;
+        margin-bottom: 10px;
+      }
+
+      a {
+        font: 700 17px/normal $main_font;
+        color: $black_color;
+        text-decoration-line: underline;
+      }
+    }
+  }
+}
+.people_and_society {
+  background: rgba(204, 204, 204, 0.30);
+  padding: 76px 0 51px 0;
+
+  .container {
+    display: flex;
+
+    .big_image {
+      width: 385px;
+      @include max-screen(768px) {
+        padding-left: 20px;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  .people {
+    width: 500px;
+    display: block;
+    align-items: center;
+    margin-left: 50px;
+
+    h2 {
+      font: 700 36px/normal $main_font;
+      color: $black_color;
+      margin-bottom: 31px;
+    }
+
+    p {
+      font: 400 36px/normal $main_font;
+      color: $black_color;
+      margin-bottom: 40px;
+      @include max-screen(768px) {
+        font: 400 26px/normal $main_font;
+        padding-right: 20px;
+      }
+    }
+
+    a {
+      font: 700 17px/normal $main_font;
+      color: $black_color;
+      text-decoration-line: underline;
+    }
+  }
+}
+.culture_and_heritage {
+  background: rgba(204, 204, 204, 0.60);
+  padding: 76px 0 51px 0;
+
+  .container {
+    display: flex;
+
+    .culture {
+      width: 500px;
+      display: block;
+      align-items: start;
+      text-align: right;
+      margin-right: 50px;
+
+      h2 {
+        font: 700 36px/normal $main_font;
+        color: $black_color;
+        margin-bottom: 31px;
+      }
+
+      p {
+        font: 400 36px/normal $main_font;
+        color: $black_color;
+        margin-bottom: 40px;
+        @include max-screen(768px) {
+          font: 400 26px/normal $main_font;
+        }
+      }
+
+      a {
+        font: 700 17px/normal $main_font;
+        color: $black_color;
+        text-decoration-line: underline;
+      }
+    }
+
+    .moroccan_culture_image {
+      width: 385px;
+      @include max-screen(768px) {
+        padding-right: 20px;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+.power_and_politics {
+  background: rgba(204, 204, 204, 0.30);
+  padding: 76px 0 51px 0;
+
+  .container {
+    display: flex;
+
+    .german_power_image {
+      width: 385px;
+      @include max-screen(768px) {
+        padding-left: 20px;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  .power {
+    width: 500px;
+    display: block;
+    align-items: center;
+    margin-left: 50px;
+
+    h2 {
+      font: 700 36px/normal $main_font;
+      color: $black_color;
+      margin-bottom: 31px;
+    }
+
+    p {
+      font: 400 36px/normal $main_font;
+      color: $black_color;
+      margin-bottom: 40px;
+      @include max-screen(768px) {
+        font: 400 26px/normal $main_font;
+        padding-right: 20px;
+      }
+    }
+
+    a {
+      font: 700 17px/normal $main_font;
+      color: $black_color;
+      text-decoration-line: underline;
+    }
+  }
+}
+.features {
+  background: $white_color;
+
+  .container {
+    h4 {
+      font: 400 36px/normal $main_font;
+      color: $black_color;
+      padding-top: 190px;
+      margin-bottom: 69px;
+      text-align: center;
+    }
+
+    .point {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: center;
+
+      .circle {
+        width: 33%;
+        font: 700 30px/normal $main_font;
+        color: $black_color;
+        margin-bottom: 111px;
+
+        &:before {
+          content: "";
+          display: block;
+          margin: auto;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          background: #21F7EC;
+          margin-bottom: 26px;
+        }
+
+        &:nth-child(2):before {
+          background: #33D3BC;
+        }
+
+        &:nth-child(3):before {
+          background: #18A5C6;
+        }
+
+        &:nth-child(4):before {
+          background: #D38F62;
+        }
+
+        &:nth-child(5):before {
+          background: #F94C43;
+        }
+
+        &:last-child:before {
+          background: #D399FF;
+        }
+      }
+    }
+  }
+}
+.thalby_guide {
+  background: linear-gradient(to bottom, $white_color 50%, #F0F0F0 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include max-screen(768px) {
+    background: linear-gradient(to bottom, $white_color 50%, #F0F0F0 50%);
+
+  }
+
+  .container {
+    text-align: center;
+
+    h3 {
+      color: $black_color;
+      font: 700 36px/normal $main_font;
+      margin-bottom: 102px;
+      padding-top: 52px;
+    }
+
+    .discover {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      @include max-screen(768px) {
+        display: block;
+      }
+
+      .content {
+        max-width: 360px;
+        margin-bottom: 52px;
+        @include max-screen(768px) {
+          margin-bottom: 20px;
+          display: block;
+          max-width: 720px;
+        }
+      }
+
+      img {
+        margin-bottom: 35px;
+        max-width: 100%;
+      }
+
+      h4{
+        font: 700 22px/normal $main_font;
+        color: $black_color;
+        margin-bottom: 40px;
+        padding: 0 50px;
+
+      }
+
+      p {
+        font: 400 19px/normal $main_font;
+        color: $black_color;
+        margin-bottom: 44px;
+      }
+
+      a {
+        font: 700 18px/normal $main_font;
+        color: $black_color;
+        text-decoration-line: underline;
+      }
+    }
+  }
+}
+
+
+
