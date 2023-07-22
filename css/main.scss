@@ -25,6 +25,13 @@
           padding-left: 15px;
           max-width: 250px;
         }
+        @include max-screen(428px) {
+          font: 700 35px/normal $main_font;
+          margin-bottom: 22px;
+          padding-top: 100px;
+          padding-left: 50px;
+          margin-top: 0px;
+        }
       }
 
       p {
@@ -35,6 +42,12 @@
           font: 400 18px/normal $main_font;
           margin-bottom: 13px;
           padding-left: 15px;
+        }
+        @include max-screen(428px) {
+          font: 400 15px/normal $main_font;
+          margin-bottom: 30px;
+          padding-left: 50px;
+          width: 400px;
         }
       }
 
@@ -54,6 +67,9 @@
           margin-bottom: 45px;
           margin-left: 15px;
         }
+        @include max-screen(428px) {
+          margin-left: 50px;
+        }
       }
     }
 
@@ -65,9 +81,13 @@
       @include max-screen(768px) {
         right: 0;
       }
+      @include max-screen(428px) {
+        opacity: 0;
+      }
     }
   }
 }
+
 .our_guides {
   background: white;
   display: flex;
@@ -110,6 +130,9 @@
       @include max-screen(768px) {
         display: block;
       }
+      @include max-screen(428px) {
+        margin-bottom: 50px;
+      }
 
       .content {
         @include max-screen(768px) {
@@ -147,6 +170,7 @@
     }
   }
 }
+
 .people_and_society {
   background: rgba(204, 204, 204, 0.30);
   padding: 76px 0 51px 0;
@@ -177,6 +201,9 @@
       font: 700 36px/normal $main_font;
       color: $black_color;
       margin-bottom: 31px;
+      @include max-screen(428px) {
+        font: 700 25px/normal $main_font;
+      }
     }
 
     p {
@@ -187,6 +214,9 @@
         font: 400 26px/normal $main_font;
         padding-right: 20px;
       }
+      @include max-screen(428px) {
+        font: 400 20px/normal $main_font;
+      }
     }
 
     a {
@@ -196,6 +226,7 @@
     }
   }
 }
+
 .culture_and_heritage {
   background: rgba(204, 204, 204, 0.60);
   padding: 76px 0 51px 0;
@@ -214,6 +245,9 @@
         font: 700 36px/normal $main_font;
         color: $black_color;
         margin-bottom: 31px;
+        @include max-screen(428px) {
+          font: 700 25px/normal $main_font;
+        }
       }
 
       p {
@@ -222,6 +256,9 @@
         margin-bottom: 40px;
         @include max-screen(768px) {
           font: 400 26px/normal $main_font;
+        }
+        @include max-screen(428px) {
+          font: 400 20px/normal $main_font;
         }
       }
 
@@ -276,6 +313,9 @@
       font: 700 36px/normal $main_font;
       color: $black_color;
       margin-bottom: 31px;
+      @include max-screen(428px) {
+        font: 700 25px/normal $main_font;
+      }
     }
 
     p {
@@ -286,6 +326,9 @@
         font: 400 26px/normal $main_font;
         padding-right: 20px;
       }
+      @include max-screen(428px) {
+        font: 400 20px/normal $main_font;
+      }
     }
 
     a {
@@ -295,6 +338,7 @@
     }
   }
 }
+
 .features {
   background: $white_color;
 
@@ -305,6 +349,10 @@
       padding-top: 190px;
       margin-bottom: 69px;
       text-align: center;
+      @include max-screen(428px) {
+        padding-top: 60px;
+        font: 400 28px/normal $main_font;
+      }
     }
 
     .point {
@@ -318,6 +366,9 @@
         font: 700 30px/normal $main_font;
         color: $black_color;
         margin-bottom: 111px;
+        @include max-screen(428px) {
+          font: 700 20px/normal $main_font;
+        }
 
         &:before {
           content: "";
@@ -353,6 +404,7 @@
     }
   }
 }
+
 .thalby_guide {
   background: linear-gradient(to bottom, $white_color 50%, #F0F0F0 50%);
   display: flex;
@@ -371,6 +423,9 @@
       font: 700 36px/normal $main_font;
       margin-bottom: 102px;
       padding-top: 52px;
+      @include max-screen(428px) {
+        font: 700 28px/normal $main_font;
+      }
     }
 
     .discover {
@@ -396,7 +451,7 @@
         max-width: 100%;
       }
 
-      h4{
+      h4 {
         font: 700 22px/normal $main_font;
         color: $black_color;
         margin-bottom: 40px;
@@ -419,5 +474,79 @@
   }
 }
 
+.keep {
+  background: $white_color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    padding: 80px 0 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font: 700 36px/normal $main_font;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      font: 700 17px/normal $main_font;
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    form {
+      text-align: center;
+
+      .name {
+        display: flex;
+        gap: 60px;
+
+        .first_name, .last_name {
+          width: 153px;
+          margin-bottom: 18px;
+        }
+      }
+
+      .email {
+        width: 366px;
+        margin-bottom: 16px;
+      }
+
+      label {
+        font: 400 14px/normal $main_font;
+        color: #A0A0A0;
+      }
+
+      input {
+        width: 100%;
+        border: 1px solid $black_color;
+        padding: 12px 0 11px 8px;
+      }
+
+      &::placeholder {
+        color: transparent;
+        font: 400 14px/normal $main_font;
+      }
+
+      .subscribe button {
+        width: 115px;
+        height: 33px;
+        border-radius: 20px;
+        background-color: $black_color;
+        color: $white_color;
+        text-align: center;
+        font: 400 14px/normal $main_font;
+        padding: 7px 23px 10px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
 
 
