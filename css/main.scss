@@ -1,3 +1,13 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+$black_color: #1C1B1B;
+$white_color: white;
+$main_font: 'Roboto', sans-serif;
+
 .fall_in_love {
   background-color: #F0EFEB;
   display: flex;

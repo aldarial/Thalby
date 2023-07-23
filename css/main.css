@@ -1,17 +1,537 @@
-/* Error: Undefined variable.
- *    ,
- * 16 |         font: 700 60px/normal $main_font;
- *    |                               ^^^^^^^^^^
- *    '
- *   main.scss 16:31  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 16 \2502          font: 700 60px/normal $main_font;\d\a    \2502                                ^^^^^^^^^^\a    \2575 \a   main.scss 16:31  root stylesheet";
+.fall_in_love {
+  background-color: #F0EFEB;
+  display: flex;
+  margin: auto;
+  align-items: center;
 }
+.fall_in_love .container {
+  display: flex;
+  justify-content: space-between;
+}
+.fall_in_love .container article {
+  align-items: flex-start;
+  flex-direction: column;
+}
+.fall_in_love .container article h1 {
+  font: 700 60px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  margin-bottom: 42px;
+  margin-top: 90px;
+  width: 540px;
+}
+@media screen and (max-width: 768px) {
+  .fall_in_love .container article h1 {
+    font: 700 40px/normal "Roboto", sans-serif;
+    margin-bottom: 22px;
+    padding-top: 160px;
+    padding-left: 15px;
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .fall_in_love .container article h1 {
+    font: 700 35px/normal "Roboto", sans-serif;
+    margin-bottom: 22px;
+    padding-top: 100px;
+    padding-left: 50px;
+    margin-top: 0px;
+  }
+}
+.fall_in_love .container article p {
+  font: 400 24px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  margin-bottom: 26px;
+}
+@media screen and (max-width: 768px) {
+  .fall_in_love .container article p {
+    font: 400 18px/normal "Roboto", sans-serif;
+    margin-bottom: 13px;
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .fall_in_love .container article p {
+    font: 400 15px/normal "Roboto", sans-serif;
+    margin-bottom: 30px;
+    padding-left: 50px;
+    width: 400px;
+  }
+}
+.fall_in_love .container article a {
+  font: 400 17px/normal "Roboto", sans-serif;
+  color: #FFF;
+  display: inline-flex;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+  border: 1px solid #1C1B1B;
+  background: #1C1B1B;
+  padding: 7px 23px 9px 23px;
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 768px) {
+  .fall_in_love .container article a {
+    font: 400 16px/normal "Roboto", sans-serif;
+    margin-bottom: 45px;
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .fall_in_love .container article a {
+    margin-left: 50px;
+  }
+}
+.fall_in_love .container .fall_img {
+  max-height: 100%;
+  max-width: 599px;
+  position: relative;
+  right: -100px;
+}
+@media screen and (max-width: 768px) {
+  .fall_in_love .container .fall_img {
+    right: 0;
+  }
+}
+@media screen and (max-width: 428px) {
+  .fall_in_love .container .fall_img {
+    opacity: 0;
+  }
+}
+
+.our_guides {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our_guides .container {
+  text-align: center;
+}
+.our_guides .container h2 {
+  color: #1C1B1B;
+  font: 700 36px/normal "Roboto", sans-serif;
+  margin-bottom: 27px;
+  padding-top: 60px;
+}
+.our_guides .container p {
+  color: #1C1B1B;
+  font: 400 20px/normal "Roboto", sans-serif;
+  margin-bottom: 47px;
+}
+.our_guides .container h4 {
+  color: #1C1B1B;
+  font: 400 20px/normal "Roboto", sans-serif;
+  margin-bottom: 87px;
+}
+.our_guides .container h3 {
+  color: #1C1B1B;
+  font: 700 36px/normal "Roboto", sans-serif;
+  margin-bottom: 52px;
+}
+.our_guides .container .sellers {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 248px;
+}
+@media screen and (max-width: 768px) {
+  .our_guides .container .sellers {
+    display: block;
+  }
+}
+@media screen and (max-width: 428px) {
+  .our_guides .container .sellers {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .our_guides .container .sellers .content {
+    margin-bottom: 20px;
+  }
+}
+.our_guides .container .sellers img {
+  margin-bottom: 20px;
+}
+.our_guides .container .sellers article {
+  display: flex;
+  max-width: 315px;
+}
+.our_guides .container .sellers h4 {
+  font: 700 17px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  margin-bottom: 10px;
+  padding: 0 100px;
+}
+.our_guides .container .sellers p {
+  font: 400 17px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  margin-bottom: 10px;
+}
+.our_guides .container .sellers a {
+  font: 700 17px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  text-decoration-line: underline;
+}
+
+.people_and_society {
+  background: rgba(204, 204, 204, 0.3);
+  padding: 76px 0 51px 0;
+}
+.people_and_society .container {
+  display: flex;
+}
+.people_and_society .container .big_image {
+  width: 385px;
+}
+@media screen and (max-width: 768px) {
+  .people_and_society .container .big_image {
+    padding-left: 20px;
+  }
+}
+.people_and_society .container .big_image img {
+  width: 100%;
+  display: block;
+}
+.people_and_society .people {
+  width: 500px;
+  display: block;
+  align-items: center;
+  margin-left: 50px;
+}
+.people_and_society .people h2 {
+  font: 700 36px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  margin-bottom: 31px;
+}
+@media screen and (max-width: 428px) {
+  .people_and_society .people h2 {
+    font: 700 25px/normal "Roboto", sans-serif;
+  }
+}
+.people_and_society .people p {
+  font: 400 36px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .people_and_society .people p {
+    font: 400 26px/normal "Roboto", sans-serif;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .people_and_society .people p {
+    font: 400 20px/normal "Roboto", sans-serif;
+  }
+}
+.people_and_society .people a {
+  font: 700 17px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  text-decoration-line: underline;
+}
+
+.culture_and_heritage {
+  background: rgba(204, 204, 204, 0.6);
+  padding: 76px 0 51px 0;
+}
+.culture_and_heritage .container {
+  display: flex;
+}
+.culture_and_heritage .container .culture {
+  width: 500px;
+  display: block;
+  align-items: start;
+  text-align: right;
+  margin-right: 50px;
+}
+.culture_and_heritage .container .culture h2 {
+  font: 700 36px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  margin-bottom: 31px;
+}
+@media screen and (max-width: 428px) {
+  .culture_and_heritage .container .culture h2 {
+    font: 700 25px/normal "Roboto", sans-serif;
+  }
+}
+.culture_and_heritage .container .culture p {
+  font: 400 36px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .culture_and_heritage .container .culture p {
+    font: 400 26px/normal "Roboto", sans-serif;
+  }
+}
+@media screen and (max-width: 428px) {
+  .culture_and_heritage .container .culture p {
+    font: 400 20px/normal "Roboto", sans-serif;
+  }
+}
+.culture_and_heritage .container .culture a {
+  font: 700 17px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  text-decoration-line: underline;
+}
+.culture_and_heritage .container .moroccan_culture_image {
+  width: 385px;
+}
+@media screen and (max-width: 768px) {
+  .culture_and_heritage .container .moroccan_culture_image {
+    padding-right: 20px;
+  }
+}
+.culture_and_heritage .container .moroccan_culture_image img {
+  width: 100%;
+  display: block;
+}
+
+.power_and_politics {
+  background: rgba(204, 204, 204, 0.3);
+  padding: 76px 0 51px 0;
+}
+.power_and_politics .container {
+  display: flex;
+}
+.power_and_politics .container .german_power_image {
+  width: 385px;
+}
+@media screen and (max-width: 768px) {
+  .power_and_politics .container .german_power_image {
+    padding-left: 20px;
+  }
+}
+.power_and_politics .container .german_power_image img {
+  width: 100%;
+  display: block;
+}
+.power_and_politics .power {
+  width: 500px;
+  display: block;
+  align-items: center;
+  margin-left: 50px;
+}
+.power_and_politics .power h2 {
+  font: 700 36px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  margin-bottom: 31px;
+}
+@media screen and (max-width: 428px) {
+  .power_and_politics .power h2 {
+    font: 700 25px/normal "Roboto", sans-serif;
+  }
+}
+.power_and_politics .power p {
+  font: 400 36px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .power_and_politics .power p {
+    font: 400 26px/normal "Roboto", sans-serif;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .power_and_politics .power p {
+    font: 400 20px/normal "Roboto", sans-serif;
+  }
+}
+.power_and_politics .power a {
+  font: 700 17px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  text-decoration-line: underline;
+}
+
+.features {
+  background: white;
+}
+.features .container h4 {
+  font: 400 36px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  padding-top: 190px;
+  margin-bottom: 69px;
+  text-align: center;
+}
+@media screen and (max-width: 428px) {
+  .features .container h4 {
+    padding-top: 60px;
+    font: 400 28px/normal "Roboto", sans-serif;
+  }
+}
+.features .container .point {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.features .container .point .circle {
+  width: 33%;
+  font: 700 30px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  margin-bottom: 111px;
+}
+@media screen and (max-width: 428px) {
+  .features .container .point .circle {
+    font: 700 20px/normal "Roboto", sans-serif;
+  }
+}
+.features .container .point .circle:before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #21F7EC;
+  margin-bottom: 26px;
+}
+.features .container .point .circle:nth-child(2):before {
+  background: #33D3BC;
+}
+.features .container .point .circle:nth-child(3):before {
+  background: #18A5C6;
+}
+.features .container .point .circle:nth-child(4):before {
+  background: #D38F62;
+}
+.features .container .point .circle:nth-child(5):before {
+  background: #F94C43;
+}
+.features .container .point .circle:last-child:before {
+  background: #D399FF;
+}
+
+.thalby_guide {
+  background: linear-gradient(to bottom, white 50%, #F0F0F0 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .thalby_guide {
+    background: linear-gradient(to bottom, white 50%, #F0F0F0 50%);
+  }
+}
+.thalby_guide .container {
+  text-align: center;
+}
+.thalby_guide .container h3 {
+  color: #1C1B1B;
+  font: 700 36px/normal "Roboto", sans-serif;
+  margin-bottom: 102px;
+  padding-top: 52px;
+}
+@media screen and (max-width: 428px) {
+  .thalby_guide .container h3 {
+    font: 700 28px/normal "Roboto", sans-serif;
+  }
+}
+.thalby_guide .container .discover {
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .thalby_guide .container .discover {
+    display: block;
+  }
+}
+.thalby_guide .container .discover .content {
+  max-width: 360px;
+  margin-bottom: 52px;
+}
+@media screen and (max-width: 768px) {
+  .thalby_guide .container .discover .content {
+    margin-bottom: 20px;
+    display: block;
+    max-width: 720px;
+  }
+}
+.thalby_guide .container .discover img {
+  margin-bottom: 35px;
+  max-width: 100%;
+}
+.thalby_guide .container .discover h4 {
+  font: 700 22px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  margin-bottom: 40px;
+  padding: 0 50px;
+}
+.thalby_guide .container .discover p {
+  font: 400 19px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  margin-bottom: 44px;
+}
+.thalby_guide .container .discover a {
+  font: 700 18px/normal "Roboto", sans-serif;
+  color: #1C1B1B;
+  text-decoration-line: underline;
+}
+
+.keep {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.keep .container {
+  padding: 80px 0 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.keep .container h2 {
+  font: 700 36px/normal "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+.keep .container h4 {
+  font: 700 17px/normal "Roboto", sans-serif;
+  text-align: center;
+  margin-bottom: 26px;
+}
+.keep .container form {
+  text-align: center;
+}
+.keep .container form .name {
+  display: flex;
+  gap: 60px;
+}
+.keep .container form .name .first_name, .keep .container form .name .last_name {
+  width: 153px;
+  margin-bottom: 18px;
+}
+.keep .container form .email {
+  width: 366px;
+  margin-bottom: 16px;
+}
+.keep .container form label {
+  font: 400 14px/normal "Roboto", sans-serif;
+  color: #A0A0A0;
+}
+.keep .container form input {
+  width: 100%;
+  border: 1px solid #1C1B1B;
+  padding: 12px 0 11px 8px;
+}
+.keep .container form::placeholder {
+  color: transparent;
+  font: 400 14px/normal "Roboto", sans-serif;
+}
+.keep .container form .subscribe button {
+  width: 115px;
+  height: 33px;
+  border-radius: 20px;
+  background-color: #1C1B1B;
+  color: white;
+  text-align: center;
+  font: 400 14px/normal "Roboto", sans-serif;
+  padding: 7px 23px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

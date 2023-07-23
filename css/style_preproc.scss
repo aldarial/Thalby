@@ -25,5 +25,10 @@ $main_font: 'Roboto', sans-serif;
   max-width: 1064px;
   margin: auto;
   align-items: center;
-  overflow-x: hidden;
+  @include max-screen(768px){
+    overflow-x: hidden;
+  }
+  @include max-screen(428px){
+    overflow-x: hidden;
+  }
 }

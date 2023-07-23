@@ -1,3 +1,12 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+$black_color: #1C1B1B;
+$white_color: white;
+$main_font: 'Roboto', sans-serif;
+
 footer {
   background-color: black;
   position: relative;
@@ -14,21 +23,21 @@ footer {
       @include max-screen(768px) {
         margin-left: 15px;
       }
-      @include max-screen(428px){
+      @include max-screen(428px) {
         display: inline-grid;
       }
     }
 
     .thalby img {
       padding-bottom: 37px;
-      @include max-screen(428px){
+      @include max-screen(428px) {
         max-width: 70%;
       }
     }
 
     .facebook, .insta {
       margin-right: 20px;
-      @include max-screen(428px){
+      @include max-screen(428px) {
         padding-bottom: 10px;
       }
     }
