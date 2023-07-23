@@ -192,7 +192,7 @@ header nav .nav-links .link {
     margin-bottom: 22px;
     padding-top: 100px;
     padding-left: 50px;
-    margin-top: 0px;
+    margin-top: 40px;
   }
 }
 .fall_in_love .container article p {
@@ -802,16 +802,6 @@ footer .about_contact .contact li a {
   max-width: 1064px;
   margin: auto;
   align-items: center;
-}
-@media screen and (max-width: 768px) {
-  .container {
-    overflow-x: hidden;
-  }
-}
-@media screen and (max-width: 428px) {
-  .container {
-    overflow-x: hidden;
-  }
 }
 
 /*# sourceMappingURL=style_preproc.css.map */
